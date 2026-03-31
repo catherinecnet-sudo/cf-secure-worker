@@ -1,0 +1,24 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cf-secure-worker",
+  "main": "src/index.js",
+  "compatibility_date": "2026-03-30",
+
+  "observability": {
+    "enabled": true
+  },
+
+  "routes": [
+    {
+      "pattern": "tunnel.cath-best.site/secure*",
+      "zone_name": "cath-best.site"
+    }
+  ],
+
+  "r2_buckets": [
+    {
+      "binding": "FLAGS_BUCKET",
+      "bucket_name": "country-flags-cath"
+    }
+  ]
+}

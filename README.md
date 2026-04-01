@@ -28,3 +28,7 @@ This project implements a Cloudflare-secured application using:
 - Access restricted with Cloudflare Zero Trust
 - Worker route configured on `tunnel.cath-best.site/secure*`
 - Private R2 bucket used for flag storage
+
+## Repository Purpose
+
+This repository contains the Worker implementation used for the Cloudflare CSE technical assessment. It demonstrates how Cloudflare Tunnel, Zero Trust Access, Workers, and R2 can be integrated to build a secure application flow.
